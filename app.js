@@ -1,7 +1,6 @@
 $(document).ready(init);
 
-let counter = 0;
-
+let counter = 1;
 
 function init() {
     console.log(`jQ`);
@@ -10,16 +9,14 @@ function init() {
     $('.container').on('click', '.js-make-yellow', makeYellow);
 }
 
-
 function newDiv() {
     $('.container').append(`
-    <div class="js-div-initial">
-    <p class="">${counter}</p>
+    <div class="js-div-initial border">
+    <p class="h2">${counter}</p>
 
     <button class="js-make-yellow">Yellow</button>
     <button class="js-delete">Delete</button>
     </div>
-    
     `)
     counter++;
 }
