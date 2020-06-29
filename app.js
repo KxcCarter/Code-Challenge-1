@@ -7,6 +7,7 @@ function init() {
     console.log(`jQ`);
     $('#js-generate-btn').on('click', newDiv);
     $('.container').on('click', '.js-delete', deleteDiv);
+    $('.container').on('click', '.js-make-yellow', makeYellow);
 }
 
 
@@ -25,4 +26,8 @@ function newDiv() {
 
 function deleteDiv() {
     $(this).parent().remove();
+}
+
+function makeYellow() {
+    $(this).parent().addClass('yellow');
 }
